@@ -1,7 +1,7 @@
 <?php
 
 // Allows anyone to access this API
-header("Access-Control-Origin: *");
+header("Access-Control-Allow-Origin: *");
 
 if ($_SERVER["REQUEST_METHOD"] != "GET") return;
 $part = explode("api/", $_SERVER["REQUEST_URI"]);
